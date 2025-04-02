@@ -27,8 +27,8 @@ Nhóm đã trích xuất 8 đặc trưng từ bộ dữ liệu [Sentinel-5P trê
 - Lý do lựa chọn: CO là sản phẩm của quá trình đốt cháy không hoàn toàn, thường đồng phát sinh với các hạt bụi mịn từ cùng nguồn (như khí thải xe cộ). Dữ liệu này cung cấp thông tin bổ sung về mức độ ô nhiễm từ các nguồn phát thải liên quan đến PM2.5.
 ### 1.4. [CO2](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_HCHO?hl=vi)
 - Mô tả bộ dữ liệu: Bộ dữ liệu này thực chất đo lường formaldehyde (HCHO), được dùng làm proxy gián tiếp cho CO2 vì dữ liệu CO2 trực tiếp không có sẵn từ Sentinel-5P.
-- Band được chọn: HCHO_column_number_density
-- Mô tả band: Band này đo mật độ cột khí HCHO, một hợp chất hữu cơ dễ bay hơi trong khí quyển.
+- Band được chọn: tropospheric_HCHO_column_number_density
+- Mô tả band: Band này đo mật độ cột khí HCHO trong tầng đối lưu (troposphere), tính bằng mol/m², tập trung vào phần khí quyển gần mặt đất nơi các quá trình hóa học ô nhiễm xảy ra.
 - Lý do lựa chọn: HCHO được tạo ra từ quá trình oxy hóa các hợp chất hữu cơ dễ bay hơi (VOCs) và CO2 trong khí quyển dưới tác động của ánh sáng mặt trời. Dữ liệu này phản ánh mức độ hoạt động hóa học liên quan đến ô nhiễm không khí, hỗ trợ dự đoán PM2.5.
 ### 1.5. [NO2](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_NO2?hl=vi)
 - Mô tả bộ dữ liệu: Bộ dữ liệu này cung cấp thông tin về nồng độ khí NO2 (nitrogen dioxide), một chất ô nhiễm chính từ khí thải phương tiện và nhà máy.
