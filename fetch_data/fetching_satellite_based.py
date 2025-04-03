@@ -24,6 +24,10 @@ def get_path(factor: str, year: int) -> str:
 
 def remote_sensing_factor_df(factor: str, begin=2019, end=2024) -> pd.DataFrame:
     
+    if not (factor in factors):
+        print("Factor must be in f{factors}")
+        return None
+    
     years = np.arange(begin, end + 1)
     
     df = pd.read_csv(get_path(factor=factor, year=begin))
