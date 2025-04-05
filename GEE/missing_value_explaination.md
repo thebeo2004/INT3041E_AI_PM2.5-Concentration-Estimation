@@ -12,38 +12,39 @@
 ### 2.1. Vị trí địa lý
 | No. | ID | Tỉnh/ thành |
 |:--:|:--:|:-----------:|
-| 1 | 5 | Hòa Bình |
-| 2 | 19 | Hà Tây |
-| 3 | 51 | Hà Nội |
-| 4 | 52 | Hà Nội |
-| 5 | 53 | Hà Nội |
-| 6 | 54 | Hà Nội |
-| 7 | 60 | Hà Nội |
-| 8 | 62 | Hà Nội |
-| 9 | 66 | Hà Nội |
-| 10 | 71 | Hà Nội |
+| 1 | 5 | Hà Nội |
+| 2 | 19 | Hà Nội |
+| 3 | 51 | Bắc Ninh |
+| 4 | 52 | Bắc Ninh |
+| 5 | 53 | Bắc Ninh |
+| 6 | 54 | Hải Dương |
+| 7 | 60 | Bắc Ninh |
+| 8 | 62 | Bắc Ninh |
+| 9 | 66 | Bắc Ninh |
+| 10 | 71 | Bắc Ninh |
 | 11 | 79 | Hà Nội |
 | 12 | 155 | Bắc Ninh |
-| 13 | 157 | Bắc Ninh |
-| 14 | 158 | Bắc Ninh |
-| 15 | 159 | Bắc Ninh |
-| 16 | 160 | Bắc Ninh |
-| 17 | 161 | Bắc Ninh |
-| 18 | 162 | Bắc Ninh |
-| 19 | 163 | Bắc Ninh |
-| 20 | 169 | Bắc Giang |
-| 21 | 172 | Bắc Giang |
-| 22 | 173 | Bắc Giang |
-| 25 | 175 | Hải Dương |
-| 24 | 195 | Hải Dương |
-| 25 | 300 | Bắc Giang |
+| 13 | 156 | Bắc Ninh |
+| 14 | 157 | Hà Nội |
+| 15 | 158 | Bắc Giang |
+| 16 | 159 | Bắc Ninh |
+| 17 | 160 | Bắc Ninh |
+| 18 | 161 | Bắc Ninh |
+| 19 | 162 | Bắc Ninh |
+| 20 | 163 | Bắc Ninh |
+| 21 | 169 | Bắc Nình |
+| 22 | 172 | Hải Dương |
+| 25 | 173 | Hải Dương |
+| 24 | 175 | Hải Dương |
+| 25 | 195 | Phú Thọ |
+| 26 | 300 | Hà Nội |
 
 ![alt text](image.png)
 
-- Các trạm thu thập nằm ở các tình thành Hòa Bình, Hà Nội, Bắc Ninh, Bắc Giang, Hải Dương. Các vị trí này nằm ở vùng Đồng bằng sông Hồng hay còn gọi là Đồng bằng Bắc Bộ (Hà Nội, Hà Tây, Hải Dương, Bắc Ninh) và Trung du Bắc bộ (Hòa Bình)
+- Các trạm thu thập nằm ở các tình thành Bắc Ninh, Hà Nội, Bắc Giang, Hải Dương, Phú Thọ. Các vị trí này nằm ở vùng Đồng bằng sông Hồng hay còn gọi là Đồng bằng Bắc Bộ/ Đồng bằng Sông Hồng
 
 ### 2.2. Phân tích vị trí địa lý
-- Như vậy, ngoài Hòa Bình (1 trạm) nằm ở Trung du Bắc bộ, còn lại đều nằm ở vùng [Đồng bằng sông Hồng](https://vi.wikipedia.org/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_H%E1%BB%93ng). 
+- Như vậy, hầu hết vị trí các trạm đều nằm ở vùng [Đồng bằng sông Hồng](https://vi.wikipedia.org/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_H%E1%BB%93ng). 
 - Đặc điểm địa lý chung:
     - Nằm ở vĩ độ khoảng 20–21.5° Bắc, gần vành đai khí hậu nhiệt đới gió mùa.
     - Gần biển (vịnh Bắc Bộ) → dễ chịu ảnh hưởng của ẩm và gió mùa biển.- Có nhiều sông lớn (sông Hồng, sông Đà, sông Cầu…) → độ ẩm không khí cao quanh năm.
