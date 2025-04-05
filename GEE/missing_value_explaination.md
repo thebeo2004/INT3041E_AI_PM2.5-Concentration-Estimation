@@ -2,7 +2,7 @@
 
 ## 1. Thống kê mức độ missing value của các đặc trưng khi so sánh với Cloud Coverage
 
-![alt text](image-1.png)
+![Missing rats of Almospheric variables by Cloud coverage](missing_value_corr_with_cloud_cov.png)
 
 - Nhìn vào dữ liệu thống kê, có thể đặt ra nghi vấn rằng Cloud coverage ảnh hưởng đến việc thu thập dữ liệu về các đặc trưng CO, HCHO, NO2, SO2 ở vệ tinh.
 - Ngoài ra, chắc chắn còn những yếu tố khác dẫn đến việc missing values mà nhóm sẽ đề cập sau
@@ -39,12 +39,12 @@
 | 25 | 195 | Phú Thọ |
 | 26 | 300 | Hà Nội |
 
-![alt text](image.png)
+![Stations coordinates on map](stations_map.png)
 
-- Các trạm thu thập nằm ở các tình thành Bắc Ninh, Hà Nội, Bắc Giang, Hải Dương, Phú Thọ. Các vị trí này nằm ở vùng Đồng bằng sông Hồng hay còn gọi là Đồng bằng Bắc Bộ/ Đồng bằng Sông Hồng
+- Các trạm thu thập nằm ở các tình thành Bắc Ninh, Hà Nội, Bắc Giang, Hải Dương, Phú Thọ. Các vị trí này nằm ở vùng Đồng bằng sông Hồng hay còn gọi là Đồng bằng Bắc Bộ/ Đồng bằng Sông Hồng (Hà Nội, Bắc Ninh và Hải Dương) và cùng Trung du, miền núi Bắc Bộ (Bắc Giang, Phú thọ) nhưng đều giáp ranh giới vùng đồng bằng, tạo thành vùng chuyển tiếp.
 
 ### 2.2. Phân tích vị trí địa lý
-- Như vậy, hầu hết vị trí các trạm đều nằm ở vùng [Đồng bằng sông Hồng](https://vi.wikipedia.org/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_H%E1%BB%93ng). 
+- Như vậy, hầu hết vị trí các trạm đều nằm lân cận ở vùng [Đồng bằng sông Hồng](https://vi.wikipedia.org/wiki/%C4%90%E1%BB%93ng_b%E1%BA%B1ng_s%C3%B4ng_H%E1%BB%93ng). 
 - Đặc điểm địa lý chung:
     - Nằm ở vĩ độ khoảng 20–21.5° Bắc, gần vành đai khí hậu nhiệt đới gió mùa.
     - Gần biển (vịnh Bắc Bộ) → dễ chịu ảnh hưởng của ẩm và gió mùa biển.- Có nhiều sông lớn (sông Hồng, sông Đà, sông Cầu…) → độ ẩm không khí cao quanh năm.
@@ -61,7 +61,7 @@
 
 📌 Kết quả: Cả năm đều có mây nhiều, dù mưa nhiều hay ít.
 
-![alt text](image-2.png)
+![Monthly Average Cloud Coverage](cloud_aver_month.png)
 
 
 ### 2.3. Ảnh hưởng của vị trí địa lý đến missing values
