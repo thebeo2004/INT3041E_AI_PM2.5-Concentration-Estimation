@@ -52,7 +52,7 @@ Nhóm đã trích xuất 8 đặc trưng từ bộ dữ liệu [Sentinel-5P trê
 - Lý do lựa chọn: CH4 tham gia vào các phản ứng hóa học trong khí quyển, đặc biệt là với gốc hydroxyl (OH), ảnh hưởng đến khả năng oxy hóa các chất ô nhiễm khác như VOCs, từ đó tác động gián tiếp đến sự hình thành PM2.5.
 ## 2. Đặc trưng bổ sung: NDVI và AOD
 Ngoài các đặc trưng từ Sentinel-5P, nhóm trích xuất thêm 2 đặc trưng từ các bộ dữ liệu khác trên GEE để bổ sung thông tin về NDVI và AOD.
-### 2.1. [NDVI](https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD13A2?hl=vi)
+### 2.1. [NDVI](https://developers.google.com/earth-engine/datasets/catalog/MODIS_MOD09GA_006_NDVI?hl=vi)
 - Mô tả bộ dữ liệu: Bộ dữ liệu MOD13A2 cung cấp chỉ số thực vật từ vệ tinh Terra MODIS, với chu kỳ 16 ngày và độ phân giải 1 km.
 - Band được chọn: NDVI
 - Mô tả band: Band này là chỉ số chênh lệch thực vật chuẩn hóa, đo lường mức độ phủ xanh của thảm thực vật.
