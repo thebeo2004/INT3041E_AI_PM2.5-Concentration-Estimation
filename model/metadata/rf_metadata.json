@@ -1,0 +1,41 @@
+{
+    "best_params": {
+        "n_estimators": 1200,
+        "min_samples_split": 15,
+        "min_samples_leaf": 2,
+        "max_features": "log2",
+        "max_depth": 15
+    },
+    "val_accuracy": 0.994535519125683,
+    "test_accuracy": 0.9938837920489296,
+    "features": [
+        "pm25",
+        "lat",
+        "lon",
+        "SQRT_SEA_DEM_LAT",
+        "WSPD",
+        "WDIR",
+        "TMP",
+        "TX",
+        "TN",
+        "TP",
+        "RH",
+        "PRES2M",
+        "NDVI",
+        "CO",
+        "HCHO",
+        "NO2",
+        "SO2",
+        "CLOUD",
+        "O3",
+        "AAI"
+    ],
+    "classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+    ]
+}

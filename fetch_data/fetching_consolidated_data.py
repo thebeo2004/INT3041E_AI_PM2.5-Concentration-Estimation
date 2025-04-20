@@ -2,7 +2,7 @@ import pandas as pd
 
 import os
 root_folder = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-file_path = root_folder + "/data/consolidation/remotesensing_atmospheric.csv"
+file_path = root_folder + "/data/add_AQI.csv" # "/data/consolidation/remotesensing_atmospheric.csv"
 
 
 def consolidated_df() -> pd.DataFrame:
