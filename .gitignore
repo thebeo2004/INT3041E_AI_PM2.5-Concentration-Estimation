@@ -1,3 +1,4 @@
 model/pycaret/ordinal
 model/metadata
 mlruns
+tmp
