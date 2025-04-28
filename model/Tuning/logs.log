@@ -1,0 +1,745 @@
+2025-04-28 00:53:25,481:INFO:PyCaret Supervised Module
+2025-04-28 00:53:25,483:INFO:ML Usecase: classification
+2025-04-28 00:53:25,483:INFO:version 2.3.10
+2025-04-28 00:53:25,483:INFO:Initializing setup()
+2025-04-28 00:53:25,483:INFO:setup(display=None, profile_kwargs=None, profile=False, verbose=True, silent=True, log_data=False, log_profile=False, log_plots=False, experiment_custom_tags=None, experiment_name=None, log_experiment=False, session_id=123, html=True, custom_pipeline=None, use_gpu=False, n_jobs=-1, fold_groups=None, fold_shuffle=False, fold=5, fold_strategy=kfold, data_split_stratify=False, data_split_shuffle=True, transform_target_method=box-cox, transform_target=False, fix_imbalance_method=None, fix_imbalance=False, interaction_threshold=0.01, feature_ratio=False, feature_interaction=False, feature_selection_method=classic, feature_selection_threshold=0.8, feature_selection=False, group_names=None, group_features=None, polynomial_threshold=0.1, trigonometry_features=False, polynomial_degree=2, polynomial_features=False, cluster_iter=20, create_clusters=False, remove_perfect_collinearity=True, multicollinearity_threshold=0.9, remove_multicollinearity=False, outliers_threshold=0.05, remove_outliers=False, bin_numeric_features=None, rare_level_threshold=0.1, combine_rare_levels=False, ignore_low_variance=False, pca_components=None, pca_method=linear, pca=False, unknown_categorical_method=least_frequent, handle_unknown_categorical=True, transformation_method=yeo-johnson, transformation=False, normalize_method=zscore, normalize=False, ignore_features=None, date_features=None, numeric_iterative_imputer=lightgbm, numeric_imputation=mean, numeric_features=None, high_cardinality_method=frequency, high_cardinality_features=None, ordinal_features=None, categorical_iterative_imputer=lightgbm, categorical_imputation=constant, categorical_features=None, iterative_imputation_iters=5, imputation_type=simple, preprocess=True, test_data=None, train_size=0.7, available_plots={'parameter': 'Hyperparameters', 'auc': 'AUC', 'confusion_matrix': 'Confusion Matrix', 'threshold': 'Threshold', 'pr': 'Precision Recall', 'error': 'Prediction Error', 'class_report': 'Class Report', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'calibration': 'Calibration Curve', 'vc': 'Validation Curve', 'dimension': 'Dimensions', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'boundary': 'Decision Boundary', 'lift': 'Lift Chart', 'gain': 'Gain Chart', 'tree': 'Decision Tree', 'ks': 'KS Statistic Plot'}, ml_usecase=classification, target=AQI_Bucket)
+2025-04-28 00:53:25,486:INFO:Checking environment
+2025-04-28 00:53:25,486:INFO:python_version: 3.6.13
+2025-04-28 00:53:25,486:INFO:python_build: ('default', 'Jun  4 2021 14:25:59')
+2025-04-28 00:53:25,486:INFO:machine: x86_64
+2025-04-28 00:53:25,487:INFO:platform: Linux-5.15.0-113-generic-x86_64-with-debian-bookworm-sid
+2025-04-28 00:53:25,489:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging.
+2025-04-28 00:53:25,491:INFO:Checking libraries
+2025-04-28 00:53:25,491:INFO:pd==1.1.5
+2025-04-28 00:53:25,494:INFO:numpy==1.19.5
+2025-04-28 00:53:25,494:INFO:sklearn==0.23.2
+2025-04-28 00:53:25,494:INFO:lightgbm==4.3.0
+2025-04-28 00:53:25,496:WARNING:catboost not found
+2025-04-28 00:53:25,498:WARNING:xgboost not found
+2025-04-28 00:53:25,500:INFO:mlflow==1.23.1
+2025-04-28 00:53:25,502:INFO:Checking Exceptions
+2025-04-28 00:53:25,503:INFO:Declaring global variables
+2025-04-28 00:53:25,505:INFO:USI: f0b0
+2025-04-28 00:53:25,505:INFO:pycaret_globals: {'_all_metrics', 'fold_shuffle_param', 'log_plots_param', 'fold_groups_param', '_all_models_internal', 'dashboard_logger', '_available_plots', '_all_models', 'html_param', 'data_before_preprocess', 'y_train', 'exp_name_log', 'display_container', 'target_param', 'y_test', 'prep_pipe', 'pycaret_globals', 'iterative_imputation_iters_param', 'X_train', '_internal_pipeline', 'fold_generator', 'imputation_regressor', 'fix_imbalance_method_param', 'n_jobs_param', 'create_model_container', 'seed', '_ml_usecase', '_gpu_n_jobs_param', 'gpu_param', 'X', 'master_model_container', 'fix_imbalance_param', 'transform_target_method_param', 'USI', 'fold_groups_param_full', 'transform_target_param', 'imputation_classifier', 'X_test', 'logging_param', 'stratify_param', 'y', 'experiment__', 'fold_param'}
+2025-04-28 00:53:25,505:INFO:Preparing display monitor
+2025-04-28 00:53:25,505:INFO:Preparing display monitor
+2025-04-28 00:53:25,527:INFO:Importing libraries
+2025-04-28 00:53:25,527:INFO:Copying data for preprocessing
+2025-04-28 00:53:25,535:INFO:Declaring preprocessing parameters
+2025-04-28 00:53:25,538:INFO:Creating preprocessing pipeline
+2025-04-28 00:53:25,565:INFO:Preprocessing pipeline created successfully
+2025-04-28 00:53:25,566:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2025-04-28 00:53:25,569:INFO:Creating global containers
+2025-04-28 00:53:25,571:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2025-04-28 00:53:25,863:WARNING:Couldn't import xgboost.XGBClassifier
+2025-04-28 00:53:25,864:WARNING:Couldn't import catboost.CatBoostClassifier
+2025-04-28 00:53:25,938:WARNING:Couldn't import xgboost.XGBClassifier
+2025-04-28 00:53:25,938:WARNING:Couldn't import catboost.CatBoostClassifier
+2025-04-28 00:53:25,942:INFO:Creating grid variables
+2025-04-28 00:53:25,967:INFO:create_model_container: 0
+2025-04-28 00:53:25,967:INFO:master_model_container: 0
+2025-04-28 00:53:25,967:INFO:display_container: 1
+2025-04-28 00:53:25,972:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=False, features_todrop=[],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=[],
+                                      target='AQI_Bucket', time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_...
+                ('scaling', 'passthrough'), ('P_transform', 'passthrough'),
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='AQI_Bucket')),
+                ('fix_perfect', Remove_100(target='AQI_Bucket')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False)
+2025-04-28 00:53:25,972:INFO:setup() succesfully completed......................................
+2025-04-28 00:53:26,094:INFO:Initializing compare_models()
+2025-04-28 00:53:26,095:INFO:compare_models(display=None, verbose=True, probability_threshold=None, experiment_custom_tags=None, groups=None, fit_kwargs=None, errors=ignore, turbo=True, budget_time=None, n_select=1, sort=Accuracy, cross_validation=True, round=4, fold=None, include=None, exclude=None)
+2025-04-28 00:53:26,097:INFO:Checking exceptions
+2025-04-28 00:53:26,100:INFO:Preparing display monitor
+2025-04-28 00:53:26,103:INFO:Preparing display monitor
+2025-04-28 00:53:26,141:INFO:Initializing Logistic Regression
+2025-04-28 00:53:26,141:INFO:Total runtime is 1.7364819844563802e-06 minutes
+2025-04-28 00:53:26,149:INFO:SubProcess create_model() called ==================================
+2025-04-28 00:53:26,150:INFO:Initializing create_model()
+2025-04-28 00:53:26,152:INFO:create_model(kwargs={}, return_train_score=False, display=<pycaret.internal.Display.Display object at 0x1554f21c4a90>, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=False, verbose=False, refit=False, groups=None, fit_kwargs={}, predict=True, cross_validation=True, round=4, fold=KFold(n_splits=5, random_state=None, shuffle=False), estimator=lr)
+2025-04-28 00:53:26,154:INFO:Checking exceptions
+2025-04-28 00:53:26,156:INFO:Importing libraries
+2025-04-28 00:53:26,158:INFO:Copying training dataset
+2025-04-28 00:53:26,162:INFO:Defining folds
+2025-04-28 00:53:26,163:INFO:Declaring metric variables
+2025-04-28 00:53:26,178:INFO:Importing untrained model
+2025-04-28 00:53:26,186:INFO:Logistic Regression Imported succesfully
+2025-04-28 00:53:26,202:INFO:Starting cross validation
+2025-04-28 00:53:26,202:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 00:53:32,643:INFO:Calculating mean and std
+2025-04-28 00:53:32,648:INFO:Creating metrics dataframe
+2025-04-28 00:53:32,660:INFO:Uploading results into container
+2025-04-28 00:53:32,660:INFO:Uploading model into container now
+2025-04-28 00:53:32,661:INFO:create_model_container: 1
+2025-04-28 00:53:32,663:INFO:master_model_container: 1
+2025-04-28 00:53:32,663:INFO:display_container: 2
+2025-04-28 00:53:32,664:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=123, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2025-04-28 00:53:32,664:INFO:create_model() succesfully completed......................................
+2025-04-28 00:53:32,795:INFO:SubProcess create_model() end ==================================
+2025-04-28 00:53:32,795:INFO:Creating metrics dataframe
+2025-04-28 00:53:32,816:INFO:Initializing K Neighbors Classifier
+2025-04-28 00:53:32,816:INFO:Total runtime is 0.11126497189203897 minutes
+2025-04-28 00:53:32,826:INFO:SubProcess create_model() called ==================================
+2025-04-28 00:53:32,827:INFO:Initializing create_model()
+2025-04-28 00:53:32,829:INFO:create_model(kwargs={}, return_train_score=False, display=<pycaret.internal.Display.Display object at 0x1554f21c4a90>, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=False, verbose=False, refit=False, groups=None, fit_kwargs={}, predict=True, cross_validation=True, round=4, fold=KFold(n_splits=5, random_state=None, shuffle=False), estimator=knn)
+2025-04-28 00:53:32,829:INFO:Checking exceptions
+2025-04-28 00:53:32,829:INFO:Importing libraries
+2025-04-28 00:53:32,831:INFO:Copying training dataset
+2025-04-28 00:53:32,832:INFO:Defining folds
+2025-04-28 00:53:32,833:INFO:Declaring metric variables
+2025-04-28 00:53:32,839:INFO:Importing untrained model
+2025-04-28 00:53:32,846:INFO:K Neighbors Classifier Imported succesfully
+2025-04-28 00:53:32,859:INFO:Starting cross validation
+2025-04-28 00:53:32,859:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 00:53:35,416:INFO:Calculating mean and std
+2025-04-28 00:53:35,420:INFO:Creating metrics dataframe
+2025-04-28 00:53:35,432:INFO:Uploading results into container
+2025-04-28 00:53:35,432:INFO:Uploading model into container now
+2025-04-28 00:53:35,432:INFO:create_model_container: 2
+2025-04-28 00:53:35,432:INFO:master_model_container: 2
+2025-04-28 00:53:35,432:INFO:display_container: 2
+2025-04-28 00:53:35,433:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2025-04-28 00:53:35,435:INFO:create_model() succesfully completed......................................
+2025-04-28 00:53:35,556:INFO:SubProcess create_model() end ==================================
+2025-04-28 00:53:35,556:INFO:Creating metrics dataframe
+2025-04-28 00:53:35,576:INFO:Initializing Naive Bayes
+2025-04-28 00:53:35,577:INFO:Total runtime is 0.15726606845855712 minutes
+2025-04-28 00:53:35,584:INFO:SubProcess create_model() called ==================================
+2025-04-28 00:53:35,585:INFO:Initializing create_model()
+2025-04-28 00:53:35,587:INFO:create_model(kwargs={}, return_train_score=False, display=<pycaret.internal.Display.Display object at 0x1554f21c4a90>, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=False, verbose=False, refit=False, groups=None, fit_kwargs={}, predict=True, cross_validation=True, round=4, fold=KFold(n_splits=5, random_state=None, shuffle=False), estimator=nb)
+2025-04-28 00:53:35,587:INFO:Checking exceptions
+2025-04-28 00:53:35,587:INFO:Importing libraries
+2025-04-28 00:53:35,587:INFO:Copying training dataset
+2025-04-28 00:53:35,588:INFO:Defining folds
+2025-04-28 00:53:35,589:INFO:Declaring metric variables
+2025-04-28 00:53:35,596:INFO:Importing untrained model
+2025-04-28 00:53:35,603:INFO:Naive Bayes Imported succesfully
+2025-04-28 00:53:35,618:INFO:Starting cross validation
+2025-04-28 00:53:35,618:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 00:53:35,698:INFO:Calculating mean and std
+2025-04-28 00:53:35,699:INFO:Creating metrics dataframe
+2025-04-28 00:53:35,715:INFO:Uploading results into container
+2025-04-28 00:53:35,715:INFO:Uploading model into container now
+2025-04-28 00:53:35,715:INFO:create_model_container: 3
+2025-04-28 00:53:35,732:INFO:master_model_container: 3
+2025-04-28 00:53:35,735:INFO:display_container: 2
+2025-04-28 00:53:35,737:INFO:GaussianNB(priors=None, var_smoothing=1e-09)
+2025-04-28 00:53:35,739:INFO:create_model() succesfully completed......................................
+2025-04-28 00:53:35,891:INFO:SubProcess create_model() end ==================================
+2025-04-28 00:53:35,891:INFO:Creating metrics dataframe
+2025-04-28 00:53:35,914:INFO:Initializing Decision Tree Classifier
+2025-04-28 00:53:35,914:INFO:Total runtime is 0.16288959980010986 minutes
+2025-04-28 00:53:35,922:INFO:SubProcess create_model() called ==================================
+2025-04-28 00:53:35,922:INFO:Initializing create_model()
+2025-04-28 00:53:35,924:INFO:create_model(kwargs={}, return_train_score=False, display=<pycaret.internal.Display.Display object at 0x1554f21c4a90>, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=False, verbose=False, refit=False, groups=None, fit_kwargs={}, predict=True, cross_validation=True, round=4, fold=KFold(n_splits=5, random_state=None, shuffle=False), estimator=dt)
+2025-04-28 00:53:35,924:INFO:Checking exceptions
+2025-04-28 00:53:35,924:INFO:Importing libraries
+2025-04-28 00:53:35,926:INFO:Copying training dataset
+2025-04-28 00:53:35,927:INFO:Defining folds
+2025-04-28 00:53:35,928:INFO:Declaring metric variables
+2025-04-28 00:53:35,935:INFO:Importing untrained model
+2025-04-28 00:53:35,942:INFO:Decision Tree Classifier Imported succesfully
+2025-04-28 00:53:35,957:INFO:Starting cross validation
+2025-04-28 00:53:35,957:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 00:53:36,182:INFO:Calculating mean and std
+2025-04-28 00:53:36,186:INFO:Creating metrics dataframe
+2025-04-28 00:53:36,198:INFO:Uploading results into container
+2025-04-28 00:53:36,199:INFO:Uploading model into container now
+2025-04-28 00:53:36,201:INFO:create_model_container: 4
+2025-04-28 00:53:36,203:INFO:master_model_container: 4
+2025-04-28 00:53:36,205:INFO:display_container: 2
+2025-04-28 00:53:36,208:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, presort='deprecated',
+                       random_state=123, splitter='best')
+2025-04-28 00:53:36,209:INFO:create_model() succesfully completed......................................
+2025-04-28 00:53:36,334:INFO:SubProcess create_model() end ==================================
+2025-04-28 00:53:36,334:INFO:Creating metrics dataframe
+2025-04-28 00:53:36,355:INFO:Initializing SVM - Linear Kernel
+2025-04-28 00:53:36,355:INFO:Total runtime is 0.170246156056722 minutes
+2025-04-28 00:53:36,365:INFO:SubProcess create_model() called ==================================
+2025-04-28 00:53:36,365:INFO:Initializing create_model()
+2025-04-28 00:53:36,367:INFO:create_model(kwargs={}, return_train_score=False, display=<pycaret.internal.Display.Display object at 0x1554f21c4a90>, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=False, verbose=False, refit=False, groups=None, fit_kwargs={}, predict=True, cross_validation=True, round=4, fold=KFold(n_splits=5, random_state=None, shuffle=False), estimator=svm)
+2025-04-28 00:53:36,367:INFO:Checking exceptions
+2025-04-28 00:53:36,369:INFO:Importing libraries
+2025-04-28 00:53:36,371:INFO:Copying training dataset
+2025-04-28 00:53:36,375:INFO:Defining folds
+2025-04-28 00:53:36,376:INFO:Declaring metric variables
+2025-04-28 00:53:36,390:INFO:Importing untrained model
+2025-04-28 00:53:36,399:INFO:SVM - Linear Kernel Imported succesfully
+2025-04-28 00:53:36,417:INFO:Starting cross validation
+2025-04-28 00:53:36,418:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 00:53:37,006:INFO:Calculating mean and std
+2025-04-28 00:53:37,007:INFO:Creating metrics dataframe
+2025-04-28 00:53:37,015:INFO:Uploading results into container
+2025-04-28 00:53:37,015:INFO:Uploading model into container now
+2025-04-28 00:53:37,017:INFO:create_model_container: 5
+2025-04-28 00:53:37,019:INFO:master_model_container: 5
+2025-04-28 00:53:37,021:INFO:display_container: 2
+2025-04-28 00:53:37,023:INFO:SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=123, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False)
+2025-04-28 00:53:37,025:INFO:create_model() succesfully completed......................................
+2025-04-28 00:53:37,152:INFO:SubProcess create_model() end ==================================
+2025-04-28 00:53:37,152:INFO:Creating metrics dataframe
+2025-04-28 00:53:37,173:INFO:Initializing Ridge Classifier
+2025-04-28 00:53:37,173:INFO:Total runtime is 0.18387891848882038 minutes
+2025-04-28 00:53:37,183:INFO:SubProcess create_model() called ==================================
+2025-04-28 00:53:37,183:INFO:Initializing create_model()
+2025-04-28 00:53:37,185:INFO:create_model(kwargs={}, return_train_score=False, display=<pycaret.internal.Display.Display object at 0x1554f21c4a90>, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=False, verbose=False, refit=False, groups=None, fit_kwargs={}, predict=True, cross_validation=True, round=4, fold=KFold(n_splits=5, random_state=None, shuffle=False), estimator=ridge)
+2025-04-28 00:53:37,185:INFO:Checking exceptions
+2025-04-28 00:53:37,185:INFO:Importing libraries
+2025-04-28 00:53:37,188:INFO:Copying training dataset
+2025-04-28 00:53:37,188:INFO:Defining folds
+2025-04-28 00:53:37,190:INFO:Declaring metric variables
+2025-04-28 00:53:37,198:INFO:Importing untrained model
+2025-04-28 00:53:37,205:INFO:Ridge Classifier Imported succesfully
+2025-04-28 00:53:37,223:INFO:Starting cross validation
+2025-04-28 00:53:37,223:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 00:53:37,284:INFO:Calculating mean and std
+2025-04-28 00:53:37,285:INFO:Creating metrics dataframe
+2025-04-28 00:53:37,292:INFO:Uploading results into container
+2025-04-28 00:53:37,293:INFO:Uploading model into container now
+2025-04-28 00:53:37,295:INFO:create_model_container: 6
+2025-04-28 00:53:37,296:INFO:master_model_container: 6
+2025-04-28 00:53:37,298:INFO:display_container: 2
+2025-04-28 00:53:37,300:INFO:RidgeClassifier(alpha=1.0, class_weight=None, copy_X=True, fit_intercept=True,
+                max_iter=None, normalize=False, random_state=123, solver='auto',
+                tol=0.001)
+2025-04-28 00:53:37,301:INFO:create_model() succesfully completed......................................
+2025-04-28 00:53:37,425:INFO:SubProcess create_model() end ==================================
+2025-04-28 00:53:37,425:INFO:Creating metrics dataframe
+2025-04-28 00:53:37,450:INFO:Initializing Random Forest Classifier
+2025-04-28 00:53:37,450:INFO:Total runtime is 0.18849653005599973 minutes
+2025-04-28 00:53:37,459:INFO:SubProcess create_model() called ==================================
+2025-04-28 00:53:37,459:INFO:Initializing create_model()
+2025-04-28 00:53:37,461:INFO:create_model(kwargs={}, return_train_score=False, display=<pycaret.internal.Display.Display object at 0x1554f21c4a90>, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=False, verbose=False, refit=False, groups=None, fit_kwargs={}, predict=True, cross_validation=True, round=4, fold=KFold(n_splits=5, random_state=None, shuffle=False), estimator=rf)
+2025-04-28 00:53:37,461:INFO:Checking exceptions
+2025-04-28 00:53:37,461:INFO:Importing libraries
+2025-04-28 00:53:37,461:INFO:Copying training dataset
+2025-04-28 00:53:37,464:INFO:Defining folds
+2025-04-28 00:53:37,466:INFO:Declaring metric variables
+2025-04-28 00:53:37,474:INFO:Importing untrained model
+2025-04-28 00:53:37,482:INFO:Random Forest Classifier Imported succesfully
+2025-04-28 00:53:37,498:INFO:Starting cross validation
+2025-04-28 00:53:37,499:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 00:53:39,800:INFO:Calculating mean and std
+2025-04-28 00:53:39,804:INFO:Creating metrics dataframe
+2025-04-28 00:53:39,816:INFO:Uploading results into container
+2025-04-28 00:53:39,817:INFO:Uploading model into container now
+2025-04-28 00:53:39,819:INFO:create_model_container: 7
+2025-04-28 00:53:39,819:INFO:master_model_container: 7
+2025-04-28 00:53:39,819:INFO:display_container: 2
+2025-04-28 00:53:39,824:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, n_estimators=100,
+                       n_jobs=-1, oob_score=False, random_state=123, verbose=0,
+                       warm_start=False)
+2025-04-28 00:53:39,825:INFO:create_model() succesfully completed......................................
+2025-04-28 00:53:39,937:INFO:SubProcess create_model() end ==================================
+2025-04-28 00:53:39,938:INFO:Creating metrics dataframe
+2025-04-28 00:53:39,960:INFO:Initializing Quadratic Discriminant Analysis
+2025-04-28 00:53:39,960:INFO:Total runtime is 0.23033202091852822 minutes
+2025-04-28 00:53:39,968:INFO:SubProcess create_model() called ==================================
+2025-04-28 00:53:39,968:INFO:Initializing create_model()
+2025-04-28 00:53:39,970:INFO:create_model(kwargs={}, return_train_score=False, display=<pycaret.internal.Display.Display object at 0x1554f21c4a90>, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=False, verbose=False, refit=False, groups=None, fit_kwargs={}, predict=True, cross_validation=True, round=4, fold=KFold(n_splits=5, random_state=None, shuffle=False), estimator=qda)
+2025-04-28 00:53:39,970:INFO:Checking exceptions
+2025-04-28 00:53:39,970:INFO:Importing libraries
+2025-04-28 00:53:39,970:INFO:Copying training dataset
+2025-04-28 00:53:39,973:INFO:Defining folds
+2025-04-28 00:53:39,974:INFO:Declaring metric variables
+2025-04-28 00:53:39,981:INFO:Importing untrained model
+2025-04-28 00:53:39,988:INFO:Quadratic Discriminant Analysis Imported succesfully
+2025-04-28 00:53:40,002:INFO:Starting cross validation
+2025-04-28 00:53:40,002:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 00:53:40,073:INFO:Calculating mean and std
+2025-04-28 00:53:40,077:INFO:Creating metrics dataframe
+2025-04-28 00:53:40,090:INFO:Uploading results into container
+2025-04-28 00:53:40,090:INFO:Uploading model into container now
+2025-04-28 00:53:40,090:INFO:create_model_container: 8
+2025-04-28 00:53:40,090:INFO:master_model_container: 8
+2025-04-28 00:53:40,092:INFO:display_container: 2
+2025-04-28 00:53:40,094:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2025-04-28 00:53:40,096:INFO:create_model() succesfully completed......................................
+2025-04-28 00:53:40,218:INFO:SubProcess create_model() end ==================================
+2025-04-28 00:53:40,218:INFO:Creating metrics dataframe
+2025-04-28 00:53:40,241:INFO:Initializing Ada Boost Classifier
+2025-04-28 00:53:40,241:INFO:Total runtime is 0.2350137154261271 minutes
+2025-04-28 00:53:40,249:INFO:SubProcess create_model() called ==================================
+2025-04-28 00:53:40,249:INFO:Initializing create_model()
+2025-04-28 00:53:40,251:INFO:create_model(kwargs={}, return_train_score=False, display=<pycaret.internal.Display.Display object at 0x1554f21c4a90>, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=False, verbose=False, refit=False, groups=None, fit_kwargs={}, predict=True, cross_validation=True, round=4, fold=KFold(n_splits=5, random_state=None, shuffle=False), estimator=ada)
+2025-04-28 00:53:40,251:INFO:Checking exceptions
+2025-04-28 00:53:40,251:INFO:Importing libraries
+2025-04-28 00:53:40,253:INFO:Copying training dataset
+2025-04-28 00:53:40,256:INFO:Defining folds
+2025-04-28 00:53:40,258:INFO:Declaring metric variables
+2025-04-28 00:53:40,264:INFO:Importing untrained model
+2025-04-28 00:53:40,271:INFO:Ada Boost Classifier Imported succesfully
+2025-04-28 00:53:40,286:INFO:Starting cross validation
+2025-04-28 00:53:40,286:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 00:53:41,109:INFO:Calculating mean and std
+2025-04-28 00:53:41,113:INFO:Creating metrics dataframe
+2025-04-28 00:53:41,125:INFO:Uploading results into container
+2025-04-28 00:53:41,125:INFO:Uploading model into container now
+2025-04-28 00:53:41,125:INFO:create_model_container: 9
+2025-04-28 00:53:41,127:INFO:master_model_container: 9
+2025-04-28 00:53:41,129:INFO:display_container: 2
+2025-04-28 00:53:41,129:INFO:AdaBoostClassifier(algorithm='SAMME.R', base_estimator=None, learning_rate=1.0,
+                   n_estimators=50, random_state=123)
+2025-04-28 00:53:41,130:INFO:create_model() succesfully completed......................................
+2025-04-28 00:53:41,247:INFO:SubProcess create_model() end ==================================
+2025-04-28 00:53:41,248:INFO:Creating metrics dataframe
+2025-04-28 00:53:41,270:INFO:Initializing Gradient Boosting Classifier
+2025-04-28 00:53:41,270:INFO:Total runtime is 0.25216141144434606 minutes
+2025-04-28 00:53:41,278:INFO:SubProcess create_model() called ==================================
+2025-04-28 00:53:41,278:INFO:Initializing create_model()
+2025-04-28 00:53:41,280:INFO:create_model(kwargs={}, return_train_score=False, display=<pycaret.internal.Display.Display object at 0x1554f21c4a90>, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=False, verbose=False, refit=False, groups=None, fit_kwargs={}, predict=True, cross_validation=True, round=4, fold=KFold(n_splits=5, random_state=None, shuffle=False), estimator=gbc)
+2025-04-28 00:53:41,280:INFO:Checking exceptions
+2025-04-28 00:53:41,280:INFO:Importing libraries
+2025-04-28 00:53:41,280:INFO:Copying training dataset
+2025-04-28 00:53:41,281:INFO:Defining folds
+2025-04-28 00:53:41,282:INFO:Declaring metric variables
+2025-04-28 00:53:41,289:INFO:Importing untrained model
+2025-04-28 00:53:41,295:INFO:Gradient Boosting Classifier Imported succesfully
+2025-04-28 00:53:41,308:INFO:Starting cross validation
+2025-04-28 00:53:41,309:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 00:54:00,887:INFO:Calculating mean and std
+2025-04-28 00:54:00,891:INFO:Creating metrics dataframe
+2025-04-28 00:54:00,903:INFO:Uploading results into container
+2025-04-28 00:54:00,903:INFO:Uploading model into container now
+2025-04-28 00:54:00,903:INFO:create_model_container: 10
+2025-04-28 00:54:00,906:INFO:master_model_container: 10
+2025-04-28 00:54:00,908:INFO:display_container: 2
+2025-04-28 00:54:00,909:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='deviance', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_impurity_split=None,
+                           min_samples_leaf=1, min_samples_split=2,
+                           min_weight_fraction_leaf=0.0, n_estimators=100,
+                           n_iter_no_change=None, presort='deprecated',
+                           random_state=123, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2025-04-28 00:54:00,909:INFO:create_model() succesfully completed......................................
+2025-04-28 00:54:01,048:INFO:SubProcess create_model() end ==================================
+2025-04-28 00:54:01,048:INFO:Creating metrics dataframe
+2025-04-28 00:54:01,075:INFO:Initializing Linear Discriminant Analysis
+2025-04-28 00:54:01,076:INFO:Total runtime is 0.582251226902008 minutes
+2025-04-28 00:54:01,085:INFO:SubProcess create_model() called ==================================
+2025-04-28 00:54:01,085:INFO:Initializing create_model()
+2025-04-28 00:54:01,087:INFO:create_model(kwargs={}, return_train_score=False, display=<pycaret.internal.Display.Display object at 0x1554f21c4a90>, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=False, verbose=False, refit=False, groups=None, fit_kwargs={}, predict=True, cross_validation=True, round=4, fold=KFold(n_splits=5, random_state=None, shuffle=False), estimator=lda)
+2025-04-28 00:54:01,087:INFO:Checking exceptions
+2025-04-28 00:54:01,087:INFO:Importing libraries
+2025-04-28 00:54:01,087:INFO:Copying training dataset
+2025-04-28 00:54:01,089:INFO:Defining folds
+2025-04-28 00:54:01,090:INFO:Declaring metric variables
+2025-04-28 00:54:01,097:INFO:Importing untrained model
+2025-04-28 00:54:01,105:INFO:Linear Discriminant Analysis Imported succesfully
+2025-04-28 00:54:01,120:INFO:Starting cross validation
+2025-04-28 00:54:01,121:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 00:54:01,239:INFO:Calculating mean and std
+2025-04-28 00:54:01,241:INFO:Creating metrics dataframe
+2025-04-28 00:54:01,250:INFO:Uploading results into container
+2025-04-28 00:54:01,250:INFO:Uploading model into container now
+2025-04-28 00:54:01,250:INFO:create_model_container: 11
+2025-04-28 00:54:01,250:INFO:master_model_container: 11
+2025-04-28 00:54:01,250:INFO:display_container: 2
+2025-04-28 00:54:01,250:INFO:LinearDiscriminantAnalysis(n_components=None, priors=None, shrinkage=None,
+                           solver='svd', store_covariance=False, tol=0.0001)
+2025-04-28 00:54:01,251:INFO:create_model() succesfully completed......................................
+2025-04-28 00:54:01,376:INFO:SubProcess create_model() end ==================================
+2025-04-28 00:54:01,376:INFO:Creating metrics dataframe
+2025-04-28 00:54:01,402:INFO:Initializing Extra Trees Classifier
+2025-04-28 00:54:01,402:INFO:Total runtime is 0.5876870354016621 minutes
+2025-04-28 00:54:01,413:INFO:SubProcess create_model() called ==================================
+2025-04-28 00:54:01,413:INFO:Initializing create_model()
+2025-04-28 00:54:01,415:INFO:create_model(kwargs={}, return_train_score=False, display=<pycaret.internal.Display.Display object at 0x1554f21c4a90>, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=False, verbose=False, refit=False, groups=None, fit_kwargs={}, predict=True, cross_validation=True, round=4, fold=KFold(n_splits=5, random_state=None, shuffle=False), estimator=et)
+2025-04-28 00:54:01,415:INFO:Checking exceptions
+2025-04-28 00:54:01,415:INFO:Importing libraries
+2025-04-28 00:54:01,415:INFO:Copying training dataset
+2025-04-28 00:54:01,416:INFO:Defining folds
+2025-04-28 00:54:01,416:INFO:Declaring metric variables
+2025-04-28 00:54:01,423:INFO:Importing untrained model
+2025-04-28 00:54:01,431:INFO:Extra Trees Classifier Imported succesfully
+2025-04-28 00:54:01,447:INFO:Starting cross validation
+2025-04-28 00:54:01,447:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 00:54:03,018:INFO:Calculating mean and std
+2025-04-28 00:54:03,022:INFO:Creating metrics dataframe
+2025-04-28 00:54:03,034:INFO:Uploading results into container
+2025-04-28 00:54:03,035:INFO:Uploading model into container now
+2025-04-28 00:54:03,037:INFO:create_model_container: 12
+2025-04-28 00:54:03,039:INFO:master_model_container: 12
+2025-04-28 00:54:03,041:INFO:display_container: 2
+2025-04-28 00:54:03,041:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='auto',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_impurity_split=None,
+                     min_samples_leaf=1, min_samples_split=2,
+                     min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=123, verbose=0,
+                     warm_start=False)
+2025-04-28 00:54:03,043:INFO:create_model() succesfully completed......................................
+2025-04-28 00:54:03,166:INFO:SubProcess create_model() end ==================================
+2025-04-28 00:54:03,167:INFO:Creating metrics dataframe
+2025-04-28 00:54:03,195:INFO:Initializing Light Gradient Boosting Machine
+2025-04-28 00:54:03,195:INFO:Total runtime is 0.6175790627797444 minutes
+2025-04-28 00:54:03,208:INFO:SubProcess create_model() called ==================================
+2025-04-28 00:54:03,208:INFO:Initializing create_model()
+2025-04-28 00:54:03,211:INFO:create_model(kwargs={}, return_train_score=False, display=<pycaret.internal.Display.Display object at 0x1554f21c4a90>, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=False, verbose=False, refit=False, groups=None, fit_kwargs={}, predict=True, cross_validation=True, round=4, fold=KFold(n_splits=5, random_state=None, shuffle=False), estimator=lightgbm)
+2025-04-28 00:54:03,211:INFO:Checking exceptions
+2025-04-28 00:54:03,211:INFO:Importing libraries
+2025-04-28 00:54:03,213:INFO:Copying training dataset
+2025-04-28 00:54:03,218:INFO:Defining folds
+2025-04-28 00:54:03,218:INFO:Declaring metric variables
+2025-04-28 00:54:03,237:INFO:Importing untrained model
+2025-04-28 00:54:03,244:INFO:Light Gradient Boosting Machine Imported succesfully
+2025-04-28 00:54:03,258:INFO:Starting cross validation
+2025-04-28 00:54:03,259:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 01:30:28,750:INFO:Calculating mean and std
+2025-04-28 01:30:29,068:INFO:Creating metrics dataframe
+2025-04-28 01:30:29,672:INFO:Uploading results into container
+2025-04-28 01:30:29,672:INFO:Uploading model into container now
+2025-04-28 01:30:29,675:INFO:create_model_container: 13
+2025-04-28 01:30:29,677:INFO:master_model_container: 13
+2025-04-28 01:30:29,679:INFO:display_container: 2
+2025-04-28 01:30:29,766:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2025-04-28 01:30:29,767:INFO:create_model() succesfully completed......................................
+2025-04-28 01:30:37,968:INFO:SubProcess create_model() end ==================================
+2025-04-28 01:30:37,968:INFO:Creating metrics dataframe
+2025-04-28 01:30:38,578:INFO:Initializing Dummy Classifier
+2025-04-28 01:30:38,580:INFO:Total runtime is 37.20733138720195 minutes
+2025-04-28 01:30:38,691:INFO:SubProcess create_model() called ==================================
+2025-04-28 01:30:38,693:INFO:Initializing create_model()
+2025-04-28 01:30:38,697:INFO:create_model(kwargs={}, return_train_score=False, display=<pycaret.internal.Display.Display object at 0x1554f21c4a90>, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=False, verbose=False, refit=False, groups=None, fit_kwargs={}, predict=True, cross_validation=True, round=4, fold=KFold(n_splits=5, random_state=None, shuffle=False), estimator=dummy)
+2025-04-28 01:30:38,713:INFO:Checking exceptions
+2025-04-28 01:30:38,715:INFO:Importing libraries
+2025-04-28 01:30:38,735:INFO:Copying training dataset
+2025-04-28 01:30:38,793:INFO:Defining folds
+2025-04-28 01:30:38,794:INFO:Declaring metric variables
+2025-04-28 01:30:38,847:INFO:Importing untrained model
+2025-04-28 01:30:38,934:INFO:Dummy Classifier Imported succesfully
+2025-04-28 01:30:39,111:INFO:Starting cross validation
+2025-04-28 01:30:39,121:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 01:30:39,860:INFO:Calculating mean and std
+2025-04-28 01:30:39,862:INFO:Creating metrics dataframe
+2025-04-28 01:30:39,884:INFO:Uploading results into container
+2025-04-28 01:30:39,884:INFO:Uploading model into container now
+2025-04-28 01:30:39,886:INFO:create_model_container: 14
+2025-04-28 01:30:39,888:INFO:master_model_container: 14
+2025-04-28 01:30:39,890:INFO:display_container: 2
+2025-04-28 01:30:39,892:INFO:DummyClassifier(constant=None, random_state=123, strategy='prior')
+2025-04-28 01:30:39,893:INFO:create_model() succesfully completed......................................
+2025-04-28 01:30:41,469:INFO:SubProcess create_model() end ==================================
+2025-04-28 01:30:41,469:INFO:Creating metrics dataframe
+2025-04-28 01:30:41,989:INFO:Initializing create_model()
+2025-04-28 01:30:42,041:INFO:create_model(kwargs={}, return_train_score=False, display=None, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=False, verbose=False, refit=True, groups=None, fit_kwargs={}, predict=False, cross_validation=False, round=4, fold=KFold(n_splits=5, random_state=None, shuffle=False), estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0))
+2025-04-28 01:30:42,042:INFO:Checking exceptions
+2025-04-28 01:30:42,054:INFO:Importing libraries
+2025-04-28 01:30:42,077:INFO:Copying training dataset
+2025-04-28 01:30:42,079:INFO:Defining folds
+2025-04-28 01:30:42,093:INFO:Declaring metric variables
+2025-04-28 01:30:42,100:INFO:Importing untrained model
+2025-04-28 01:30:42,103:INFO:Declaring custom model
+2025-04-28 01:30:42,110:INFO:Light Gradient Boosting Machine Imported succesfully
+2025-04-28 01:30:42,113:INFO:Cross validation set to False
+2025-04-28 01:30:42,128:INFO:Fitting Model
+2025-04-28 02:04:31,140:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2025-04-28 02:04:31,141:INFO:create_models() succesfully completed......................................
+2025-04-28 02:04:31,378:INFO:create_model_container: 14
+2025-04-28 02:04:31,378:INFO:master_model_container: 14
+2025-04-28 02:04:31,378:INFO:display_container: 2
+2025-04-28 02:04:31,379:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2025-04-28 02:04:31,381:INFO:compare_models() succesfully completed......................................
+2025-04-28 02:04:31,447:INFO:Initializing create_model()
+2025-04-28 02:04:31,447:INFO:create_model(kwargs={}, return_train_score=False, display=None, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=True, verbose=True, refit=True, groups=None, fit_kwargs=None, predict=True, cross_validation=True, round=4, fold=None, estimator=dt)
+2025-04-28 02:04:31,449:INFO:Checking exceptions
+2025-04-28 02:04:31,449:INFO:Preparing display monitor
+2025-04-28 02:04:31,476:INFO:Importing libraries
+2025-04-28 02:04:31,476:INFO:Copying training dataset
+2025-04-28 02:04:31,481:INFO:Defining folds
+2025-04-28 02:04:31,482:INFO:Declaring metric variables
+2025-04-28 02:04:31,498:INFO:Importing untrained model
+2025-04-28 02:04:31,510:INFO:Decision Tree Classifier Imported succesfully
+2025-04-28 02:04:31,539:INFO:Starting cross validation
+2025-04-28 02:04:31,540:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 02:04:39,924:INFO:Calculating mean and std
+2025-04-28 02:04:39,926:INFO:Creating metrics dataframe
+2025-04-28 02:04:39,943:INFO:Finalizing model
+2025-04-28 02:04:40,153:INFO:Uploading results into container
+2025-04-28 02:04:40,153:INFO:Uploading model into container now
+2025-04-28 02:04:40,176:INFO:create_model_container: 15
+2025-04-28 02:04:40,176:INFO:master_model_container: 15
+2025-04-28 02:04:40,178:INFO:display_container: 3
+2025-04-28 02:04:40,180:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, presort='deprecated',
+                       random_state=123, splitter='best')
+2025-04-28 02:04:40,181:INFO:create_model() succesfully completed......................................
+2025-04-28 02:04:40,334:INFO:Initializing create_model()
+2025-04-28 02:04:40,334:INFO:create_model(kwargs={}, return_train_score=False, display=None, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=True, verbose=True, refit=True, groups=None, fit_kwargs=None, predict=True, cross_validation=True, round=4, fold=None, estimator=gbc)
+2025-04-28 02:04:40,336:INFO:Checking exceptions
+2025-04-28 02:04:40,338:INFO:Preparing display monitor
+2025-04-28 02:04:40,356:INFO:Importing libraries
+2025-04-28 02:04:40,356:INFO:Copying training dataset
+2025-04-28 02:04:40,359:INFO:Defining folds
+2025-04-28 02:04:40,360:INFO:Declaring metric variables
+2025-04-28 02:04:40,369:INFO:Importing untrained model
+2025-04-28 02:04:40,377:INFO:Gradient Boosting Classifier Imported succesfully
+2025-04-28 02:04:40,391:INFO:Starting cross validation
+2025-04-28 02:04:40,392:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 02:05:31,577:INFO:Calculating mean and std
+2025-04-28 02:05:31,578:INFO:Creating metrics dataframe
+2025-04-28 02:05:31,606:INFO:Finalizing model
+2025-04-28 02:06:32,733:INFO:Uploading results into container
+2025-04-28 02:06:32,740:INFO:Uploading model into container now
+2025-04-28 02:06:32,872:INFO:create_model_container: 16
+2025-04-28 02:06:32,878:INFO:master_model_container: 16
+2025-04-28 02:06:32,878:INFO:display_container: 4
+2025-04-28 02:06:32,878:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='deviance', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_impurity_split=None,
+                           min_samples_leaf=1, min_samples_split=2,
+                           min_weight_fraction_leaf=0.0, n_estimators=100,
+                           n_iter_no_change=None, presort='deprecated',
+                           random_state=123, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2025-04-28 02:06:32,880:INFO:create_model() succesfully completed......................................
+2025-04-28 02:06:33,889:INFO:Initializing create_model()
+2025-04-28 02:06:33,891:INFO:create_model(kwargs={}, return_train_score=False, display=None, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=True, verbose=True, refit=True, groups=None, fit_kwargs=None, predict=True, cross_validation=True, round=4, fold=5, estimator=rf)
+2025-04-28 02:06:33,893:INFO:Checking exceptions
+2025-04-28 02:06:33,895:INFO:Preparing display monitor
+2025-04-28 02:06:33,996:INFO:Importing libraries
+2025-04-28 02:06:33,998:INFO:Copying training dataset
+2025-04-28 02:06:33,999:INFO:Defining folds
+2025-04-28 02:06:34,006:INFO:Declaring metric variables
+2025-04-28 02:06:34,037:INFO:Importing untrained model
+2025-04-28 02:06:34,078:INFO:Random Forest Classifier Imported succesfully
+2025-04-28 02:06:34,154:INFO:Starting cross validation
+2025-04-28 02:06:34,154:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 02:06:39,705:INFO:Calculating mean and std
+2025-04-28 02:06:39,707:INFO:Creating metrics dataframe
+2025-04-28 02:06:39,727:INFO:Finalizing model
+2025-04-28 02:06:44,184:INFO:Uploading results into container
+2025-04-28 02:06:44,184:INFO:Uploading model into container now
+2025-04-28 02:06:44,238:INFO:create_model_container: 17
+2025-04-28 02:06:44,240:INFO:master_model_container: 17
+2025-04-28 02:06:44,251:INFO:display_container: 5
+2025-04-28 02:06:44,251:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, n_estimators=100,
+                       n_jobs=-1, oob_score=False, random_state=123, verbose=0,
+                       warm_start=False)
+2025-04-28 02:06:44,251:INFO:create_model() succesfully completed......................................
+2025-04-28 02:06:44,940:INFO:Initializing create_model()
+2025-04-28 02:06:44,943:INFO:create_model(kwargs={}, return_train_score=False, display=None, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=True, verbose=True, refit=True, groups=None, fit_kwargs=None, predict=True, cross_validation=True, round=4, fold=None, estimator=lr)
+2025-04-28 02:06:44,943:INFO:Checking exceptions
+2025-04-28 02:06:44,944:INFO:Preparing display monitor
+2025-04-28 02:06:45,064:INFO:Importing libraries
+2025-04-28 02:06:45,064:INFO:Copying training dataset
+2025-04-28 02:06:45,066:INFO:Defining folds
+2025-04-28 02:06:45,070:INFO:Declaring metric variables
+2025-04-28 02:06:45,115:INFO:Importing untrained model
+2025-04-28 02:06:45,161:INFO:Logistic Regression Imported succesfully
+2025-04-28 02:06:45,240:INFO:Starting cross validation
+2025-04-28 02:06:45,241:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 02:07:00,160:INFO:Calculating mean and std
+2025-04-28 02:07:00,161:INFO:Creating metrics dataframe
+2025-04-28 02:07:00,179:INFO:Finalizing model
+2025-04-28 02:07:29,754:INFO:Uploading results into container
+2025-04-28 02:07:29,755:INFO:Uploading model into container now
+2025-04-28 02:07:29,871:INFO:create_model_container: 18
+2025-04-28 02:07:29,871:INFO:master_model_container: 18
+2025-04-28 02:07:29,871:INFO:display_container: 6
+2025-04-28 02:07:29,873:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=123, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2025-04-28 02:07:29,879:INFO:create_model() succesfully completed......................................
+2025-04-28 02:07:30,452:INFO:Initializing create_model()
+2025-04-28 02:07:30,452:INFO:create_model(kwargs={}, return_train_score=False, display=None, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=True, verbose=True, refit=True, groups=None, fit_kwargs=None, predict=True, cross_validation=True, round=4, fold=None, estimator=et)
+2025-04-28 02:07:30,455:INFO:Checking exceptions
+2025-04-28 02:07:30,456:INFO:Preparing display monitor
+2025-04-28 02:07:30,556:INFO:Importing libraries
+2025-04-28 02:07:30,556:INFO:Copying training dataset
+2025-04-28 02:07:30,575:INFO:Defining folds
+2025-04-28 02:07:30,576:INFO:Declaring metric variables
+2025-04-28 02:07:30,626:INFO:Importing untrained model
+2025-04-28 02:07:30,688:INFO:Extra Trees Classifier Imported succesfully
+2025-04-28 02:07:30,808:INFO:Starting cross validation
+2025-04-28 02:07:30,810:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 02:07:34,232:INFO:Calculating mean and std
+2025-04-28 02:07:34,234:INFO:Creating metrics dataframe
+2025-04-28 02:07:34,250:INFO:Finalizing model
+2025-04-28 02:07:36,850:INFO:Uploading results into container
+2025-04-28 02:07:36,850:INFO:Uploading model into container now
+2025-04-28 02:07:36,914:INFO:create_model_container: 19
+2025-04-28 02:07:36,916:INFO:master_model_container: 19
+2025-04-28 02:07:36,917:INFO:display_container: 7
+2025-04-28 02:07:36,919:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='auto',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_impurity_split=None,
+                     min_samples_leaf=1, min_samples_split=2,
+                     min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=123, verbose=0,
+                     warm_start=False)
+2025-04-28 02:07:36,921:INFO:create_model() succesfully completed......................................
+2025-04-28 02:07:37,697:INFO:Initializing create_model()
+2025-04-28 02:07:37,698:INFO:create_model(kwargs={}, return_train_score=False, display=None, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=True, verbose=True, refit=True, groups=None, fit_kwargs=None, predict=True, cross_validation=True, round=4, fold=None, estimator=qda)
+2025-04-28 02:07:37,702:INFO:Checking exceptions
+2025-04-28 02:07:37,703:INFO:Preparing display monitor
+2025-04-28 02:07:37,814:INFO:Importing libraries
+2025-04-28 02:07:37,814:INFO:Copying training dataset
+2025-04-28 02:07:37,824:INFO:Defining folds
+2025-04-28 02:07:37,824:INFO:Declaring metric variables
+2025-04-28 02:07:37,871:INFO:Importing untrained model
+2025-04-28 02:07:37,897:INFO:Quadratic Discriminant Analysis Imported succesfully
+2025-04-28 02:07:37,922:INFO:Starting cross validation
+2025-04-28 02:07:37,924:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 02:07:38,134:INFO:Calculating mean and std
+2025-04-28 02:07:38,135:INFO:Creating metrics dataframe
+2025-04-28 02:07:38,153:INFO:Finalizing model
+2025-04-28 02:07:38,977:INFO:Uploading results into container
+2025-04-28 02:07:39,004:INFO:Uploading model into container now
+2025-04-28 02:07:39,101:INFO:create_model_container: 20
+2025-04-28 02:07:39,106:INFO:master_model_container: 20
+2025-04-28 02:07:39,106:INFO:display_container: 8
+2025-04-28 02:07:39,118:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2025-04-28 02:07:39,118:INFO:create_model() succesfully completed......................................
+2025-04-28 02:07:39,999:INFO:Initializing create_model()
+2025-04-28 02:07:40,005:INFO:create_model(kwargs={}, return_train_score=False, display=None, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=True, verbose=True, refit=True, groups=None, fit_kwargs=None, predict=True, cross_validation=True, round=4, fold=None, estimator=ada)
+2025-04-28 02:07:40,006:INFO:Checking exceptions
+2025-04-28 02:07:40,008:INFO:Preparing display monitor
+2025-04-28 02:07:40,132:INFO:Importing libraries
+2025-04-28 02:07:40,133:INFO:Copying training dataset
+2025-04-28 02:07:40,143:INFO:Defining folds
+2025-04-28 02:07:40,147:INFO:Declaring metric variables
+2025-04-28 02:07:40,181:INFO:Importing untrained model
+2025-04-28 02:07:40,241:INFO:Ada Boost Classifier Imported succesfully
+2025-04-28 02:07:40,340:INFO:Starting cross validation
+2025-04-28 02:07:40,341:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 02:07:46,470:INFO:Calculating mean and std
+2025-04-28 02:07:46,471:INFO:Creating metrics dataframe
+2025-04-28 02:07:46,489:INFO:Finalizing model
+2025-04-28 02:07:51,991:INFO:Uploading results into container
+2025-04-28 02:07:51,991:INFO:Uploading model into container now
+2025-04-28 02:07:52,144:INFO:create_model_container: 21
+2025-04-28 02:07:52,145:INFO:master_model_container: 21
+2025-04-28 02:07:52,147:INFO:display_container: 9
+2025-04-28 02:07:52,147:INFO:AdaBoostClassifier(algorithm='SAMME.R', base_estimator=None, learning_rate=1.0,
+                   n_estimators=50, random_state=123)
+2025-04-28 02:07:52,149:INFO:create_model() succesfully completed......................................
+2025-04-28 02:07:52,995:INFO:Initializing create_model()
+2025-04-28 02:07:53,006:INFO:create_model(kwargs={}, return_train_score=False, display=None, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=True, verbose=True, refit=True, groups=None, fit_kwargs=None, predict=True, cross_validation=True, round=4, fold=None, estimator=nb)
+2025-04-28 02:07:53,006:INFO:Checking exceptions
+2025-04-28 02:07:53,006:INFO:Preparing display monitor
+2025-04-28 02:07:53,107:INFO:Importing libraries
+2025-04-28 02:07:53,108:INFO:Copying training dataset
+2025-04-28 02:07:53,111:INFO:Defining folds
+2025-04-28 02:07:53,118:INFO:Declaring metric variables
+2025-04-28 02:07:53,155:INFO:Importing untrained model
+2025-04-28 02:07:53,198:INFO:Naive Bayes Imported succesfully
+2025-04-28 02:07:53,267:INFO:Starting cross validation
+2025-04-28 02:07:53,274:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 02:07:53,415:INFO:Calculating mean and std
+2025-04-28 02:07:53,416:INFO:Creating metrics dataframe
+2025-04-28 02:07:53,438:INFO:Finalizing model
+2025-04-28 02:07:53,487:INFO:Uploading results into container
+2025-04-28 02:07:53,488:INFO:Uploading model into container now
+2025-04-28 02:07:53,623:INFO:create_model_container: 22
+2025-04-28 02:07:53,625:INFO:master_model_container: 22
+2025-04-28 02:07:53,631:INFO:display_container: 10
+2025-04-28 02:07:53,632:INFO:GaussianNB(priors=None, var_smoothing=1e-09)
+2025-04-28 02:07:53,634:INFO:create_model() succesfully completed......................................
+2025-04-28 02:07:54,233:INFO:Initializing create_model()
+2025-04-28 02:07:54,233:INFO:create_model(kwargs={}, return_train_score=False, display=None, probability_threshold=None, add_to_model_list=True, experiment_custom_tags=None, metrics=None, system=True, verbose=True, refit=True, groups=None, fit_kwargs=None, predict=True, cross_validation=True, round=4, fold=None, estimator=knn)
+2025-04-28 02:07:54,233:INFO:Checking exceptions
+2025-04-28 02:07:54,233:INFO:Preparing display monitor
+2025-04-28 02:07:54,369:INFO:Importing libraries
+2025-04-28 02:07:54,371:INFO:Copying training dataset
+2025-04-28 02:07:54,373:INFO:Defining folds
+2025-04-28 02:07:54,380:INFO:Declaring metric variables
+2025-04-28 02:07:54,430:INFO:Importing untrained model
+2025-04-28 02:07:54,481:INFO:K Neighbors Classifier Imported succesfully
+2025-04-28 02:07:54,564:INFO:Starting cross validation
+2025-04-28 02:07:54,566:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2025-04-28 02:07:55,547:INFO:Calculating mean and std
+2025-04-28 02:07:55,549:INFO:Creating metrics dataframe
+2025-04-28 02:07:55,569:INFO:Finalizing model
+2025-04-28 02:07:55,719:INFO:Uploading results into container
+2025-04-28 02:07:55,728:INFO:Uploading model into container now
+2025-04-28 02:07:55,888:INFO:create_model_container: 23
+2025-04-28 02:07:55,890:INFO:master_model_container: 23
+2025-04-28 02:07:55,892:INFO:display_container: 11
+2025-04-28 02:07:55,894:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2025-04-28 02:07:55,896:INFO:create_model() succesfully completed......................................
+2025-04-28 02:07:56,797:INFO:gpu_param set to False
+2025-04-28 02:07:57,281:WARNING:Couldn't import xgboost.XGBClassifier
+2025-04-28 02:07:57,282:WARNING:Couldn't import catboost.CatBoostClassifier
+2025-04-28 02:07:57,393:INFO:gpu_param set to False
+2025-04-28 02:07:57,565:WARNING:Couldn't import xgboost.XGBClassifier
+2025-04-28 02:07:57,566:WARNING:Couldn't import catboost.CatBoostClassifier
+2025-04-28 02:07:57,609:INFO:gpu_param set to False
+2025-04-28 02:07:58,040:WARNING:Couldn't import xgboost.XGBClassifier
+2025-04-28 02:07:58,040:WARNING:Couldn't import catboost.CatBoostClassifier

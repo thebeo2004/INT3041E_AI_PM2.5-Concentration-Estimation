@@ -1,0 +1,4 @@
+artifact_location: file:///home/thu/INT3041E_AI_PM2.5-Concentration-Estimation/mlruns/1
+experiment_id: '1'
+lifecycle_stage: active
+name: MLmodel

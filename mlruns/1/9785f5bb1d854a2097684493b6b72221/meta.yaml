@@ -1,0 +1,15 @@
+artifact_uri: file:///home/thu/INT3041E_AI_PM2.5-Concentration-Estimation/mlruns/1/9785f5bb1d854a2097684493b6b72221/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 9785f5bb1d854a2097684493b6b72221
+run_uuid: 9785f5bb1d854a2097684493b6b72221
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745773615998
+status: 1
+tags: []
+user_id: thu
