@@ -2,4 +2,5 @@ model/pycaret/ordinal
 model/metadata
 mlruns/
 tmp/
-logs.log
+*.log
+*.pkl
