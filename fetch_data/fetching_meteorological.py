@@ -5,7 +5,7 @@ from numpy import nan
 
 import os
 root_folder = os.path.dirname(os.path.abspath(os.getcwd()))
-file_path = root_folder + "\\data\\meteorological\\meteorological.csv"
+file_path = root_folder + "/data/meteorological/meteorological.csv"
 
 date_format = '%Y-%m-%d'
 begin_date = datetime.strptime('2020-01-01', date_format)
