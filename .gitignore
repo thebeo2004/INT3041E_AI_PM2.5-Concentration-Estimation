@@ -4,3 +4,7 @@ mlruns/
 tmp/
 *.log
 *.pkl
+*.csv
+*.zip
+
+
