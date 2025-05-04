@@ -6,7 +6,7 @@ Dự án này nhằm mục đích **ước lượng chỉ số chất lượng k
 
 1. **Trích Xuất Dữ Liệu**  
    - Dữ liệu khí tượng và dữ liệu vệ tinh được trích xuất từ **Google Earth Engine**.  
-   - Các đặc trưng bao gồm: **UVAI**, **CLOUD**, **CO**, **NO₂**, **O₃**, **CH₄** và **NDVI**.
+   - Các đặc trưng bao gồm: **HCHO**, **CLOUD**, **CO**, **NO₂**, **O₃**, **SO₂** và **NDVI**.
 
 2. **Nội Suy Dữ Liệu Thiếu**  
    - Giá trị thiếu được xử lý bằng các phương pháp như **KNN**, **trung bình động có trọng số tuyến tính** và **phương pháp không gian–thời gian**.
