@@ -1,0 +1,8 @@
+mlruns/
+tmp/
+*.log
+*.pkl
+*.csv
+*.zip
+.nfs000000000120689500000236
+model/experiment.ipynb
