@@ -3,7 +3,7 @@ import pandas as pd
 
 import os
 root_folder = os.path.dirname(os.path.abspath(os.getcwd()))
-data_folder = root_folder + "\\data\\satellite-based"
+data_folder = root_folder + "/data/satellite-based"
 
 factors = ['CLOUD', 'CO', 'HCHO', 'NDVI', 'NO2', 'O3', 'SO2', 'AAI']
 
@@ -17,10 +17,10 @@ def get_path(factor: str, year: int) -> str:
     if (factor == 'AAI'):
         factor = 'UV'
     
-    factor_folder = data_folder + "\\" + factor
+    factor_folder = data_folder + "/" + factor
     file_name = f"{factor}_{year}.csv"
     
-    return factor_folder + "\\" + file_name
+    return factor_folder + "/" + file_name
 
 def remote_sensing_factor_df(factor: str, begin=2019, end=2024) -> pd.DataFrame:
     
